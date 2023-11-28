@@ -193,9 +193,6 @@ def logout():
 
 if __name__ == '__main__':
     with app.app_context():
-        # Import User class to ensure it's recognized
-        from your_module_name import User
-        # Create tables if they don't exist
         db.create_all()
 
     # Run the application
